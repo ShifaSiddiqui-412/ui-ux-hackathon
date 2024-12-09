@@ -75,7 +75,7 @@ export default function Hero() {
               />
               <div className="mt-4">
                 <h3 className="font-medium text-lg">Nike Air Max Pulse</h3>
-                <p className="text-gray-500 text-sm">Women's Shoes</p>
+                <p className="text-gray-500 text-sm">Womens Shoes</p>
                 <p className="font-bold mt-1">Rs 13,995</p>
               </div>
             </div>
@@ -91,7 +91,7 @@ export default function Hero() {
               />
               <div className="mt-4">
                 <h3 className="font-medium text-lg">Nike Air Max Pulse</h3>
-                <p className="text-gray-500 text-sm">Men's Shoes</p>
+                <p className="text-gray-500 text-sm">Mens Shoes</p>
                 <p className="font-bold mt-1">Rs 13,995</p>
               </div>
             </div>
@@ -107,7 +107,7 @@ export default function Hero() {
               />
               <div className="mt-4">
                 <h3 className="font-medium text-lg">Nike Air Max 97 SE</h3>
-                <p className="text-gray-500 text-sm">Men's Shoes</p>
+                <p className="text-gray-500 text-sm">Mens Shoes</p>
                 <p className="font-bold mt-1">Rs 16,995</p>
               </div>
             </div>
@@ -115,7 +115,7 @@ export default function Hero() {
         </div>
       </div>
 
-    // {/* New Section */}
+    
       <div className="relative bg-white py-16 px-4">
         <div className="max-w-6xl mx-auto text-center">
           <Image
@@ -175,7 +175,7 @@ export default function Hero() {
       </div>
 
       {/* Fullscreen Sneaker Image */}
-      <div> <h3>Don't Miss</h3></div>
+      <div> <h3>Dont Miss</h3></div>
       <div className="w-full h-screen bg-gray-100 relative">
 
         <Image
