@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -6,12 +7,14 @@ export default function Hero() {
       <div className="w-screen bg-gray-100">
         {/* Hero Section */}
         <div className="relative w-full h-screen">
+          <h1 className="font-bold text-black ml-[50%] ">Hello Nike App</h1>
+          <p className="text-black ml-[30%]">Download the app to access everything Nike. <span className="underline font-bold ">Get Your Great</span></p>
           <Image
             src="/Shoes/Shoepic1.png"
             alt="Sneaker"
-            width={100}
-            height={500}
-            className="h-[700px] w-full object-cover object-center"
+            width={1200}
+            height={600}
+            className="rounded mx-auto"
           />
         </div>
 
@@ -37,7 +40,7 @@ export default function Hero() {
               Notify Me
             </button>
             <button className="px-6 py-3 bg-black text-white font-medium rounded-full hover:bg-gray-800 transition">
-              Shop Air Max
+             <Link href="/Components/product-detail">Shop Air Max</Link> 
             </button>
           </div>
         </div>
@@ -132,7 +135,7 @@ export default function Hero() {
             Cause everyone should know the feeling of running in that perfect pair!
           </p>
           <button className="mt-6 px-8 py-3 bg-black text-white font-semibold rounded-lg hover:bg-gray-800 transition">
-            Find Your Shoe
+           <Link href="/Components/product">Find Your Shoe</Link> 
           </button>
         </div>
       </div>
