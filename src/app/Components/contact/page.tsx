@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from "next/link";
 
 const ContactPage = () => {
   return (
@@ -30,7 +30,7 @@ const ContactPage = () => {
           </ul>
           <p className="mb-4">
             Nike Members can store multiple debit or credit cards in their profile for faster
-            checkout. If you're not already a Member,{' '}
+            checkout. If youre not already a Member,{ }
             <Link href="/Components/joinus" className="underline text-blue-600">
               join us today
             </Link>
@@ -66,7 +66,7 @@ const ContactPage = () => {
             <div>
               <p className="font-medium">Can I pay for my order with multiple methods?</p>
               <p className="text-sm text-gray-600">
-                No, payment for Nike orders can't be split between multiple payment methods.
+                No, payment for Nike orders cant be split between multiple payment methods.
               </p>
             </div>
             <div>
@@ -80,7 +80,7 @@ const ContactPage = () => {
             <div>
               <p className="font-medium">Why don’t I see Apple Pay as an option?</p>
               <p className="text-sm text-gray-600">
-                To see Apple Pay as an option in the Nike App or on Nike.com, you'll need a
+                To see Apple Pay as an option in the Nike App or on Nike.com, youll need a
                 compatible Apple device running the latest OS, be signed in to your iCloud account,
                 and have it set up in your wallet.
               </p>

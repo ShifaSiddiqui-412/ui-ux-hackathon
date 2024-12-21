@@ -23,14 +23,14 @@ const CartPage = () => {
                                 Nike Dri-FIT ADV TechKnit Ultra
                             </h3>
                             <p className="text-sm text-gray-600">
-                                Men's Short-Sleeve Running Top
+                                Mens Short-Sleeve Running Top
                             </p>
                             <p className="text-sm text-gray-600">Ashen Slate/Cobalt Bliss</p>
                             <p className="text-sm text-gray-600">Size: M</p>
                             <p className="text-sm text-gray-600">Quantity: 1</p>
                         </div>
                         <div className="flex flex-col items-end">
-                            <p className="text-sm text-gray-900 font-semibold">₹ 3,895.00</p>
+                            <p className="text-sm text-gray-900 font-semibold">Rs. 3,895.00</p>
                             
                         </div>
                     </div>
@@ -48,13 +48,13 @@ const CartPage = () => {
                             <h3 className="text-sm font-semibold text-gray-900">
                                 Nike Air Max 97 SE
                             </h3>
-                            <p className="text-sm text-gray-600">Men's Shoes</p>
+                            <p className="text-sm text-gray-600">Mens Shoes</p>
                             <p className="text-sm text-gray-600">Flat Pewter/Light Bone</p>
                             <p className="text-sm text-gray-600">Size: 9</p>
                             <p className="text-sm text-gray-600">Quantity: 1</p>
                         </div>
                         <div className="flex flex-col items-end">
-                            <p className="text-sm text-gray-900 font-semibold">₹ 16,995.00</p>
+                            <p className="text-sm text-gray-900 font-semibold">Rs. 16,995.00</p>
                         </div>
                     </div>
                 </div>
@@ -64,7 +64,7 @@ const CartPage = () => {
                     <h2 className="text-lg font-semibold text-gray-900 mb-4">Summary</h2>
                     <div className="flex justify-between text-sm text-gray-600 mb-2">
                         <p>Subtotal</p>
-                        <p>₹ 20,890.00</p>
+                        <p>Rs. 20,890.00</p>
                     </div>
                     <div className="flex justify-between text-sm text-gray-600 mb-4">
                         <p>Estimated Delivery & Handling</p>
@@ -72,7 +72,7 @@ const CartPage = () => {
                     </div>
                     <div className="flex justify-between text-lg font-semibold text-gray-900 mb-6">
                         <p>Total</p>
-                        <p>₹ 20,890.00</p>
+                        <p>Rs. 20,890.00</p>
                     </div>
                     <button className="w-full px-6 py-3 bg-black text-white text-sm rounded-full hover:bg-gray-800 transition-all">
                         Member Checkout

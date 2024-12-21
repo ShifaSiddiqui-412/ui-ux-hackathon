@@ -132,7 +132,7 @@ const JoinPage = () => {
 
           {/* Terms and Conditions */}
           <p className="text-sm text-gray-600 mb-4">
-            By creating an account, you agree to Nike's{" "}
+            By creating an account, you agree to Nikes{" "}
             <a href="#" className="text-blue-600 underline">
               Terms of Service
             </a>{" "}

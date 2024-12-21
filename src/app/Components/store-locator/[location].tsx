@@ -23,7 +23,8 @@ const StoreLocator = () => {
       );
       setStores(filteredStores);
     }
-  }, [location]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [location]); // Only track 'location' as a dependency
 
   // Handle undefined location during the initial render
   if (!location) {
