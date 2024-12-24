@@ -1,13 +1,15 @@
-"use client";
+'use client';
 
 import { useState } from 'react';
-import { useSearchParams } from 'next/navigation';
+import { useSearchParams, useRouter } from 'next/navigation';
 
 const StoreLocator = () => {
   const [location, setLocation] = useState('');
   const searchParams = useSearchParams();
-  const currentLocation = searchParams.get('location'); // Get 'location' from the query
+  const router = useRouter();
+  const currentLocation = searchParams?.get('location') || ''; // Provide a fallback value
 
+  // Move mock stores outside the component to prevent re-creation on each render
   const mockStores = [
     { id: 1, name: 'Store 1', address: '123 Main St, City A', city: 'karachi' },
     { id: 2, name: 'Store 2', address: '456 Elm St, City B', city: 'lahore' },
@@ -16,8 +18,9 @@ const StoreLocator = () => {
 
   const handleSearch = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // Ideally, update the URL or state here to reflect the location search
-    console.log(`Searching stores for location: ${location}`);
+    if (location.trim()) {
+      router.push(`/Components/store-locator?location=${location}`);
+    }
   };
 
   const filteredStores = currentLocation
@@ -28,30 +31,35 @@ const StoreLocator = () => {
 
   return (
     <div className="p-10">
-      <h1 className="text-2xl font-bold mb-4">Store Locator</h1>
-      <form onSubmit={handleSearch} className="mb-4">
+      <h1 className="text-3xl font-bold mb-6">Store Locator</h1>
+      <form onSubmit={handleSearch} className="flex flex-col sm:flex-row mb-6 gap-4">
         <input
           type="text"
           value={location}
           onChange={(e) => setLocation(e.target.value)}
           placeholder="Enter your city"
-          className="border p-2 rounded mr-2"
+          className="border border-gray-300 rounded-md p-2 w-full sm:w-auto"
         />
-        <button type="submit" className="bg-blue-500 text-white px-4 py-2 rounded">
+        <button
+          type="submit"
+          className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700"
+        >
           Search
         </button>
       </form>
       {filteredStores.length > 0 ? (
         <ul className="list-disc pl-5">
           {filteredStores.map((store) => (
-            <li key={store.id} className="mb-2">
-              <p className="font-medium">{store.name}</p>
+            <li key={store.id} className="mb-4">
+              <p className="font-semibold text-lg">{store.name}</p>
               <p className="text-gray-600">{store.address}</p>
             </li>
           ))}
         </ul>
+      ) : currentLocation ? (
+        <p className="text-red-500">No stores found in {currentLocation}.</p>
       ) : (
-        <p className="text-red-500">No stores found in this location.</p>
+        <p className="text-gray-500">Enter a city to find nearby stores.</p>
       )}
     </div>
   );

@@ -260,7 +260,7 @@ const Productlist = () => {
                                     <Image
                                         src={product.image}
                                         alt={product.name}
-                                        layout="fill"
+                                        fill
                                         objectFit="cover"
                                         className="rounded-t-lg"
                                     />

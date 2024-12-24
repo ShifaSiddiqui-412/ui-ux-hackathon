@@ -40,7 +40,7 @@ export default function Hero() {
               Notify Me
             </button>
             <button className="px-6 py-3 bg-black text-white font-medium rounded-full hover:bg-gray-800 transition">
-             <Link href="/Components/product-detail">Shop Air Max</Link> 
+              <Link href="/Components/product-detail">Shop Air Max</Link>
             </button>
           </div>
         </div>
@@ -118,7 +118,7 @@ export default function Hero() {
         </div>
       </div>
 
-    
+
       <div className="relative bg-white py-16 px-4">
         <div className="max-w-6xl mx-auto text-center">
           <Image
@@ -135,7 +135,7 @@ export default function Hero() {
             Cause everyone should know the feeling of running in that perfect pair!
           </p>
           <button className="mt-6 px-8 py-3 bg-black text-white font-semibold rounded-lg hover:bg-gray-800 transition">
-           <Link href="/Components/product">Find Your Shoe</Link> 
+            <Link href="/Components/product">Find Your Shoe</Link>
           </button>
         </div>
       </div>
@@ -184,9 +184,9 @@ export default function Hero() {
         <Image
           src="/Man/M4.png"
           alt="Sneaker"
-          layout="fill"
-          objectFit="cover"
-          objectPosition="center"
+          fill
+          className="object-cover object-center"
+
         />
       </div>
 
@@ -209,41 +209,38 @@ export default function Hero() {
         <h2 className="text-lg font-bold text-[#111] mb-6">The Essentials</h2>
         <div className="flex">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-<div>
-            <Image
-              src={"/Es1.png"}
-              alt={"Men's"}
-              layout="responsive"
-              width={500}
-              height={500}
-              className="object-cover"
-            />
+            <div className="relative">
+              <Image
+                src={"/Es1.png"}
+                alt={"Men's"}
+                width={500}
+                height={500}
+                className="object-cover"
+              />
 
+            </div>
+            <div>
+
+              <Image
+                src={"/Es2.png"}
+                alt={"Woman's"}
+                width={500}
+                height={500}
+                className="object-cover"
+              />
+
+            </div>
+            <div>
+
+              <Image
+                src={"/Es3.png"}
+                alt={"Men's"}               
+                width={500}
+                height={500}
+                className="object-cover"
+              />
+            </div>
           </div>
-          <div>
-
-            <Image
-              src={"/Es2.png"}
-              alt={"Woman's"}
-              layout="responsive"
-              width={500}
-              height={500}
-              className="object-cover"
-            />
-
-          </div>
-          <div>
-
-            <Image
-              src={"/Es3.png"}
-              alt={"Men's"}
-              layout="responsive"
-              width={500}
-              height={500}
-              className="object-cover"
-            />
-          </div>
-        </div>
         </div>
       </div>
     </div>
