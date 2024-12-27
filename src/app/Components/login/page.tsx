@@ -13,7 +13,7 @@ export default function LoginForm() {
         <div className="w-full max-w-md space-y-8 px-4">
           <div className="flex flex-col items-center">
             <Image src="/logo.svg" alt="Nike Logo" width={60} height={22} className="mb-6" />
-            <h2 className="text-2xl font-bold text-center">
+            <h2 className="text-2xl font-bold text-center text-black">
               YOUR ACCOUNT <br /> FOR EVERYTHING <br /> NIKE
             </h2>
           </div>

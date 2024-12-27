@@ -6,9 +6,11 @@ export default function Hero() {
     <div>
       <div className="w-screen bg-gray-100">
         {/* Hero Section */}
-        <div className="relative w-full h-screen">
-          <h1 className="font-bold text-black ml-[50%] ">Hello Nike App</h1>
-          <p className="text-black ml-[30%]">Download the app to access everything Nike. <span className="underline font-bold ">Get Your Great</span></p>
+        <div className="relative w-full">
+          <div className="text-center  mb-4">
+          <h1 className="font-bold text-black pt-6">Hello Nike App</h1>
+          <p className="text-black">Download the app to access everything Nike. <span className="underline font-bold ">Get Your Great</span></p>
+          </div>
           <Image
             src="/Shoes/Shoepic1.png"
             alt="Sneaker"
@@ -24,7 +26,7 @@ export default function Hero() {
           <p className="text-sm text-gray-500 uppercase tracking-wide mb-2">
             First Look
           </p>
-          <h1 className="text-4xl md:text-6xl font-extrabold mb-4">
+          <h1 className="text-4xl md:text-6xl font-extrabold mb-4 text-black">
             NIKE AIR MAX PULSE
           </h1>
 
@@ -51,14 +53,14 @@ export default function Hero() {
           <div className="flex flex-col md:flex-row justify-between items-center mb-6">
             <h2 className="text-2xl font-bold mb-4 md:mb-0">Best of Air Max</h2>
             <div className="flex items-center gap-4">
-              <button className="px-4 py-2 font-bold bg-gray-200 rounded-full hover:bg-gray-300">
+              <button className="px-4 py-2  text-black font-bold bg-gray-200 rounded-full hover:bg-gray-400">
                 Shop
               </button>
               <div className="flex gap-2">
-                <button className="p-2 bg-gray-100 rounded-full hover:bg-gray-200">
+                <button className="p-2 text-black  bg-gray-100 rounded-full hover:bg-gray-400">
                   ←
                 </button>
-                <button className="p-2 bg-gray-300 rounded-full hover:bg-gray-400">
+                <button className="p-2 text-black  bg-gray-300 rounded-full hover:bg-gray-400">
                   →
                 </button>
               </div>
@@ -77,9 +79,9 @@ export default function Hero() {
                 className="mx-auto"
               />
               <div className="mt-4">
-                <h3 className="font-medium text-lg">Nike Air Max Pulse</h3>
+                <h3 className="text-gray-900 font-medium text-lg">Nike Air Max Pulse</h3>
                 <p className="text-gray-500 text-sm">Womens Shoes</p>
-                <p className="font-bold mt-1">Rs 13,995</p>
+                <p className="text-gray-900 font-bold mt-1">Rs 13,995</p>
               </div>
             </div>
 
@@ -93,9 +95,9 @@ export default function Hero() {
                 className="mx-auto"
               />
               <div className="mt-4">
-                <h3 className="font-medium text-lg">Nike Air Max Pulse</h3>
+                <h3 className="text-gray-900 font-medium text-lg">Nike Air Max Pulse</h3>
                 <p className="text-gray-500 text-sm">Mens Shoes</p>
-                <p className="font-bold mt-1">Rs 13,995</p>
+                <p className="text-gray-900 font-bold mt-1">Rs 13,995</p>
               </div>
             </div>
 
@@ -109,9 +111,9 @@ export default function Hero() {
                 className="mx-auto"
               />
               <div className="mt-4">
-                <h3 className="font-medium text-lg">Nike Air Max 97 SE</h3>
+                <h3 className="text-gray-900 font-medium text-lg">Nike Air Max 97 SE</h3>
                 <p className="text-gray-500 text-sm">Mens Shoes</p>
-                <p className="font-bold mt-1">Rs 16,995</p>
+                <p className="text-gray-900 font-bold mt-1">Rs 16,995</p>
               </div>
             </div>
           </div>
@@ -185,7 +187,7 @@ export default function Hero() {
           src="/Man/M4.png"
           alt="Sneaker"
           fill
-          className="object-cover object-center"
+          className="h-600 w-1200 rounded mx-auto "
 
         />
       </div>
@@ -193,7 +195,7 @@ export default function Hero() {
       {/* Flight Essentials Section */}
       <div className="bg-white py-16 px-6">
         <div className="max-w-6xl mx-auto text-center">
-          <h1 className="text-4xl font-bold underline">Flight Essentials</h1>
+          <h1 className="text-4xl font-bold underline text-black">Flight Essentials</h1>
           <p className="mt-4 text-lg text-gray-600">
             Built to last all week—but with style only Jordan Brand can deliver.
           </p>
@@ -205,7 +207,7 @@ export default function Hero() {
 
       {/* Product Display Section */}
 
-      <div className="max-w-[1440px] mx-auto px-4">
+      <div className="max-w-[1440px] mx-auto px-4 mb-6">
         <h2 className="text-lg font-bold text-[#111] mb-6">The Essentials</h2>
         <div className="flex">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">

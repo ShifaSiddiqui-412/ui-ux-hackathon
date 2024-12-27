@@ -19,7 +19,7 @@ const Header = () => {
         </div>
 
         {/* Navigation Links */}
-        <nav className="hidden sm:flex gap-4 md:gap-6 text-gray-700 font-medium text-[10px] sm:text-[14px] md:text-[16px]">
+        <nav className="hidden sm:flex gap-4 md:gap-4 text-gray-700 font-medium text-[10px] sm:text-[14px] md:text-[16px]">
           {["New & Featured", "Men", "Women", "Kids", "Sale", "SNKRS"].map(
             (link, index) => (
               <Link
@@ -40,14 +40,14 @@ const Header = () => {
             <input
               type="text"
               placeholder="Search"
-              className="border border-gray-300 rounded-full py-2 pl-4 pr-10 text-sm focus:outline-none"
+              className="border border-gray-300 rounded-full py-2 pl-4 pr-10 text-sm focus:outline-none "
             />
             <FaSearch className="absolute top-1/2 right-3 transform -translate-y-1/2 text-gray-500" />
           </div>
 
           {/* Action Icons */}
-          <FaHeart className="text-gray-700 w-[16px] h-[16px] sm:w-[20px] sm:h-[20px] md:w-[24px] md:h-[24px] cursor-pointer hover:text-black" />
-          <FaShoppingBag className="text-gray-700 w-[16px] h-[16px] sm:w-[20px] sm:h-[20px] md:w-[24px] md:h-[24px] cursor-pointer hover:text-black" />
+          <FaHeart className="text-gray-700  sm:w-[20px] sm:h-[20px] md:w-[20px] md:h-[20px]  cursor-pointer hover:text-black" />
+          <FaShoppingBag className="text-gray-700  sm:w-[20px] sm:h-[20px] md:w-[20px] md:h-[20px]  cursor-pointer hover:text-black" />
         </div>
       </div>
 

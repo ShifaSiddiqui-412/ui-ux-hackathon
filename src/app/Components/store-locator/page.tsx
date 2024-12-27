@@ -10,9 +10,9 @@ const StoreLocatorContent = () => {
   const currentLocation = searchParams?.get('location') || '';
 
   const mockStores = [
-    { id: 1, name: 'Store 1', address: '123 Main St, City A', city: 'karachi' },
-    { id: 2, name: 'Store 2', address: '456 Elm St, City B', city: 'lahore' },
-    { id: 3, name: 'Store 3', address: '789 Oak St, City C', city: 'karachi' },
+    { id: 1, name: 'Store 1', address: '123 Main St, Karachi', city: 'karachi' },
+    { id: 2, name: 'Store 2', address: '456 Elm St, Lahore', city: 'lahore' },
+    { id: 3, name: 'Store 3', address: '789 Oak St, Islamabad', city: 'islamabad' },
   ];
 
   const handleSearch = (e: React.FormEvent<HTMLFormElement>) => {
@@ -29,15 +29,16 @@ const StoreLocatorContent = () => {
     : [];
 
   return (
-    <div>
+    <div className="mt-[100px] mb-[100px] text-center ">
       <form onSubmit={handleSearch}>
         <input
           type="text"
           value={location}
           onChange={(e) => setLocation(e.target.value)}
           placeholder="Enter your city"
+          className="h-[40px] w-[320px] text-center rounded-md"
         />
-        <button type="submit">Search</button>
+        <button type="submit" className="ml-4">Search</button>
       </form>
       {filteredStores.length > 0 ? (
         <ul>
@@ -51,7 +52,7 @@ const StoreLocatorContent = () => {
       ) : currentLocation ? (
         <p>No stores found in {currentLocation}.</p>
       ) : (
-        <p>Enter a city to find stores.</p>
+        <p className="mt-7 font-semibold">Enter a city to find stores.</p>
       )}
     </div>
   );

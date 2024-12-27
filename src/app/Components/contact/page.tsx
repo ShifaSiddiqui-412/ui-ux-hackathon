@@ -5,12 +5,14 @@ const ContactPage = () => {
     <div className="min-h-screen bg-gray-100 text-gray-800 p-8">
       {/* Header */}
       <header className="pb-6 border-b">
-        <h1 className= "ml-[50%] mb-2 text-xl font-bold">GET HELP</h1>
+        <h1 className= "text-center mb-2 text-xl font-bold">GET HELP</h1>
+        <div className="flex items-center justify-center">
         <input
           type="text"
           placeholder="What can we help you with?"
-          className="border rounded-lg ml-[41%] px-4 py-2 w-64"
+          className="border rounded-lg px-4 py-2 w-64 text-center"
         />
+        </div>
       </header>
 
       {/* Main Content */}
