@@ -47,7 +47,8 @@ const Header = () => {
 
           {/* Action Icons */}
           <FaHeart className="text-gray-700  sm:w-[20px] sm:h-[20px] md:w-[20px] md:h-[20px]  cursor-pointer hover:text-black" />
-          <FaShoppingBag className="text-gray-700  sm:w-[20px] sm:h-[20px] md:w-[20px] md:h-[20px]  cursor-pointer hover:text-black" />
+          <Link href="/cart">  <FaShoppingBag className="text-gray-700  sm:w-[20px] sm:h-[20px] md:w-[20px] md:h-[20px]  cursor-pointer hover:text-black" />
+        </Link>
         </div>
       </div>
 
